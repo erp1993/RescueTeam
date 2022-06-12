@@ -1,0 +1,13 @@
+<mat-card class="content-card">
+  <div class="city-name-container">
+    <h2>{{this.currentCity.name}}</h2>
+    <div class="weather-description-container">
+      <p>{{this.currentCity.weatherConditions !== undefined ? this.currentCity.weatherConditions.description : ''}}</p>
+      <img src='http://openweathermap.org/img/wn/{{this.currentCity.weatherConditions !== undefined ? this.currentCity.weatherConditions.icon : ""}}.png'>
+    </div>
+
+  </div>
+
+  <app-weather-data-table [dataSource]="[this.currentCity]"></app-weather-data-table>
+
+</mat-card>

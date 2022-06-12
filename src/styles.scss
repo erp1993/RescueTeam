@@ -1,0 +1,42 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+mat-card.content-card {
+  margin: 5vh 5vh;
+
+  .city-name-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .weather-description-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+
+
+    p {
+      margin: 10px;
+    }
+  }
+}
+@include media-breakpoint-up(md) {
+  mat-card.content-card {
+    margin: 5vh 15vh
+  }
+}
+
+table.mat-table {
+  width: 100%;
+
+  th.mat-header-cell, td.mat-cell {
+    width: 5em;
+    margin: 1em,
+  }
+}
