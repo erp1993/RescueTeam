@@ -1,8 +1,13 @@
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import 'node_modules/bootstrap/scss/bootstrap';
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
 
 mat-card.content-card {
   margin: 5vh 5vh;
@@ -20,7 +25,6 @@ mat-card.content-card {
     align-items: center;
     justify-content: end;
 
-
     p {
       margin: 10px;
     }
@@ -28,15 +32,16 @@ mat-card.content-card {
 }
 @include media-breakpoint-up(md) {
   mat-card.content-card {
-    margin: 5vh 15vh
+    margin: 5vh 15vh;
   }
 }
 
 table.mat-table {
   width: 100%;
 
-  th.mat-header-cell, td.mat-cell {
+  th.mat-header-cell,
+  td.mat-cell {
     width: 5em;
-    margin: 1em,
+    margin: 1em;
   }
 }
