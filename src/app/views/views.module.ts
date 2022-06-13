@@ -1,4 +1,4 @@
-import { SharedModule } from 'src/app/shared/shared.module';
+import { SharedModule } from '../shared/shared.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -9,15 +9,13 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
-  declarations: [
-    MainViewComponent
-  ],
+  declarations: [MainViewComponent],
   imports: [
     CommonModule,
     ViewsRoutingModule,
     SharedModule,
     MatToolbarModule,
-    MatDialogModule
-  ]
+    MatDialogModule,
+  ],
 })
-export class ViewsModule { }
+export class ViewsModule {}
